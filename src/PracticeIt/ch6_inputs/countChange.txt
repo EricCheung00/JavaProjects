@@ -1,0 +1,6 @@
+Dime 2.0 penny 5 true one niCKel 1 10 quarter penny
+ 							
+10 13 3.5 nil dime 3 pennies five
+ no coins here
+ Quarter 5.66 10 quarter 33 dime DIME 25 50 25 dime dIME 27 
+quarter 25.0 bye penny

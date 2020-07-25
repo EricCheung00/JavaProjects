@@ -1,0 +1,8 @@
+Line 1 : $0.58
+Line 2 : $0.00
+Line 3 : $0.20
+Line 4 : $0.00
+Line 5 : $1.50
+Line 6 : $0.26
+Total: $2.54
+Average Change: $0.42
