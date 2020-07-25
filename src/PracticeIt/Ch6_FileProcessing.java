@@ -129,7 +129,8 @@ public class Ch6_FileProcessing {
 					count = 1;
 				}
 			}
-			System.out.println();	
+			System.out.println();
+			lineReader.close();
 		}
 	}
 
@@ -214,7 +215,7 @@ public class Ch6_FileProcessing {
 					readingCoinCount = true;
 				}
 			}
-
+			lineReader.close();
 		}
 		System.out.println(String.format("Total money: $%.2f", sum));
 	}
