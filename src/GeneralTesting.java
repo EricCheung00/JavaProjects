@@ -12,6 +12,20 @@ public class GeneralTesting {
 				
 		System.out.println(generateId("John", 3));
 		System.out.println(generateId("John", 8));
+		
+		generateRandomInRange(5,10,20);
+	}
+
+	private static void generateRandomInRange(int start, int end, int len) {
+		int rangeStart = start;
+		int rangeEnd = end;
+		int counter = 0;
+		Random r = new Random();
+		while (counter < len) {
+			int randomNumber = r.nextInt(rangeEnd - rangeStart + 1) + rangeStart;
+			System.out.print(randomNumber + " , ");
+			counter++;
+		}
 	}
 
 	private static String generateId(String name, int count) {
@@ -60,6 +74,8 @@ public class GeneralTesting {
 		
 		return flag;
 	}
+	
+	
 
 
 }

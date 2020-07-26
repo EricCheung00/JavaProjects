@@ -53,10 +53,21 @@ public class Ch5_Random_WhileLoops {
 	 * while (reader.hasNext()) {
 	 *     String token = reader.next();
 	 */
+	
+	/*
+	 * RANDOM TO GENERATE INTEGERS IN A RANGE (INCLUSIVE)
+	 * ---
+	 * int rangeStart = 
+	 * int rangeEnd = 
+	 * Random r = new Random();
+	 * int randomNumber = r.nextInt( rangeEnd - rangeStart + 1) + rangeStart;
+	 * ---
+	 */
 
 	public static void main(String[] args) {
 		diceSum();
 		System.out.println("Greatest Common Denominator is: " + gcd(10,50));
+		generateRandomInRange(5,10,20);
 	}
 
 	/**
@@ -171,6 +182,26 @@ public class Ch5_Random_WhileLoops {
 		}
 
 		return max - min + 1;
+	}
+	
+	/**
+	 * Print randomly generated integers in the range between "start" and "end"
+	 * (inclusive) for "len" times.
+	 * 
+	 * @param start
+	 * @param end
+	 * @param len
+	 */
+	private static void generateRandomInRange(int start, int end, int len) {
+		int rangeStart = start;
+		int rangeEnd = end;
+		int counter = 0;
+		Random r = new Random();
+		while (counter < len) {
+			int randomNumber = r.nextInt(rangeEnd - rangeStart + 1) + rangeStart;
+			System.out.print(randomNumber + " , ");
+			counter++;
+		}
 	}
 
 }
