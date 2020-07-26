@@ -31,7 +31,7 @@ public class Ch6_FileProcessing {
 	 */
 	
 	/*
-	 * PATTERN TO SCAN LINES FROM A WHILE
+	 * PATTERN TO SCAN LINES FROM A FILE
 	 * ---
 	 * Scanner input = new Scanner(new File("input.txt"));
 	 * while (input.hasNext()) {
