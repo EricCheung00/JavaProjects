@@ -32,9 +32,9 @@ public class Ch6_Proj_countChange {
 		
 		// construct path to input and output files
 		Path inputFilePath = Paths.get(PracticeItEnv.currentPath.toString(), PracticeItEnv.packagePath,
-				PracticeItEnv.chapterInputsPath, inputFileName);
+				PracticeItEnv.chapter6InputsPath, inputFileName);
 		Path outputFilePath = Paths.get(PracticeItEnv.currentPath.toString(), PracticeItEnv.packagePath,
-				PracticeItEnv.chapterInputsPath, outputFileName);
+				PracticeItEnv.chapter6InputsPath, outputFileName);
 		
 		// open Scanner to read input file; open PrintStream to print output file
 		Scanner input = new Scanner(new File(inputFilePath.toString()));

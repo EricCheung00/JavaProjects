@@ -212,65 +212,65 @@ public class Ch6_FileProcessing {
 		}
 	}
 
-	public static void runCheckFileExists() {
+	private static void runCheckFileExists() {
 		// test case 1 - this file exists
 		Path inputFilePath1 = Paths.get(PracticeItEnv.currentPath.toString(), PracticeItEnv.packagePath,
-				PracticeItEnv.chapterInputsPath, "countCoins_input1.txt");
+				PracticeItEnv.chapter6InputsPath, "countCoins_input1.txt");
 		System.out.println("This file exists: " + checkFileExists(inputFilePath1));
 		// test case 2 - this file does not exists
 		Path inputFilePath2 = Paths.get(PracticeItEnv.currentPath.toString(), PracticeItEnv.packagePath,
-				PracticeItEnv.chapterInputsPath, "countCoins_input2.dat");
+				PracticeItEnv.chapter6InputsPath, "countCoins_input2.dat");
 		System.out.println("This file exists: " + checkFileExists(inputFilePath2));
 	
 	}
 
-	public static void runCountCoins() throws FileNotFoundException {
+	private static void runCountCoins() throws FileNotFoundException {
 		// test case 1 - should print "Total money: $1.09"
 		Path inputFilePath1 = Paths.get(PracticeItEnv.currentPath.toString(), PracticeItEnv.packagePath,
-				PracticeItEnv.chapterInputsPath, "countCoins_input1.txt");
+				PracticeItEnv.chapter6InputsPath, "countCoins_input1.txt");
 		Scanner input1 = new Scanner(new File(inputFilePath1.toString()));
 		countCoins(input1);
 		input1.close();
 		// test case 2 - should print "Total money: $3.84"
 		Path inputFilePath2 = Paths.get(PracticeItEnv.currentPath.toString(), PracticeItEnv.packagePath,
-				PracticeItEnv.chapterInputsPath, "countCoins_input2.txt");
+				PracticeItEnv.chapter6InputsPath, "countCoins_input2.txt");
 		Scanner input2 = new Scanner(new File(inputFilePath2.toString()));
 		countCoins(input2); // should print "Total money: $1.09"
 		input2.close();
 	}
 
-	public static void runEvenNumbers() throws FileNotFoundException {
+	private static void runEvenNumbers() throws FileNotFoundException {
 		Path inputFilePath = Paths.get(PracticeItEnv.currentPath.toString(), PracticeItEnv.packagePath,
-				PracticeItEnv.chapterInputsPath, "numbers.text");
+				PracticeItEnv.chapter6InputsPath, "numbers.text");
 		Scanner input = new Scanner(new File(inputFilePath.toString()));
 		evenNumbers(input);
 	}
 
-	public static void runPlusScores()
+	private static void runPlusScores()
 			throws FileNotFoundException {
 		// test case
 		Path inputFilePath = Paths.get(PracticeItEnv.currentPath.toString(), PracticeItEnv.packagePath,
-				PracticeItEnv.chapterInputsPath, "plusScores.txt");
+				PracticeItEnv.chapter6InputsPath, "plusScores.txt");
 		Scanner input = new Scanner(new File(inputFilePath.toString()));
 		plusScores(input);
 		input.close();
 	}
 
-	public static void runPrintDuplicates()
+	private static void runPrintDuplicates()
 			throws FileNotFoundException {
 		// test case
 		Path inputFilePath = Paths.get(PracticeItEnv.currentPath.toString(), PracticeItEnv.packagePath,
-				PracticeItEnv.chapterInputsPath, "printDuplicates_input.txt");
+				PracticeItEnv.chapter6InputsPath, "printDuplicates_input.txt");
 		Scanner input = new Scanner(new File(inputFilePath.toString()));
 		printDuplicates(input);
 		input.close();
 	}
 
-	public static void runStripHtmlTags() 
+	private static void runStripHtmlTags() 
 			throws FileNotFoundException {
 		// test case
 		Path inputFilePath = Paths.get(PracticeItEnv.currentPath.toString(), PracticeItEnv.packagePath,
-				PracticeItEnv.chapterInputsPath, "stripHtmlTags_input.txt");
+				PracticeItEnv.chapter6InputsPath, "stripHtmlTags_input.txt");
 		Scanner input = new Scanner(new File(inputFilePath.toString()));
 		stripHtmlTags(input);
 		input.close();

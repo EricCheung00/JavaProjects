@@ -9,6 +9,8 @@ public class PracticeItEnv {
 	
 	public static final String packagePath = "src/PracticeIt";
 	
-	public static final String chapterInputsPath = "ch6_inputs";	
+	public static final String chapter6InputsPath = "ch6_inputs";
+	
+	public static final String chapter7InputsPath = "ch7_inputs";
 	
 }
