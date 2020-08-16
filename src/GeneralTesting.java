@@ -3,7 +3,7 @@ import java.util.Random;
 public class GeneralTesting {
 
 	public static void main(String[] args) {
-		
+		/*
 		System.out.println(isDigitsDescending(1234));
 		System.out.println(isDigitsDescending(-4321));
 		System.out.println(isDigitsDescending(-2));
@@ -14,6 +14,11 @@ public class GeneralTesting {
 		System.out.println(generateId("John", 8));
 		
 		generateRandomInRange(5,10,20);
+		*/
+		int year = 1970;
+		int month = 1;
+		int day = 2;
+		System.out.println(String.format("%04d/%02d/%02d", year, month, day));
 	}
 
 	private static void generateRandomInRange(int start, int end, int len) {
